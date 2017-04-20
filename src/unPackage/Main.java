@@ -30,11 +30,12 @@ public class Main {
 //			m1.mostrarMatriz();
 			Lector l = new Lector("sel.in");
 			MatrizMath matriz = new MatrizMath(l.getMatriz());
+			matriz.mostrarMatriz();
 			VectorMath vector = new VectorMath(l.getVector());
 			matriz.mostrarMatriz();
 //			System.out.println(vector.toString());
-			MatrizMath test = matriz.invertir();
-			test.mostrarMatriz();
+//			MatrizMath test = matriz.invertir();
+//			test.mostrarMatriz();
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

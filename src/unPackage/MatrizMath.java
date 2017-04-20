@@ -11,15 +11,15 @@ public class MatrizMath {
 	private double [][] matriz;
 	public MatrizMath(double[][] matriz) {
 		this.matriz = matriz;
-		this.dimCol = matriz.length;
-		this.dimFil = matriz[0].length;
+		this.dimFil = matriz.length;
+		this.dimCol = matriz[0].length;
 	}
 	
 	public MatrizMath(String path) throws FileNotFoundException{
 		Scanner sc = new Scanner(new File(path));
 		matriz = new double[sc.nextInt()][sc.nextInt()];
-		this.dimCol = matriz.length;
-		this.dimFil = matriz[0].length;
+		this.dimCol = matriz[0].length;
+		this.dimFil = matriz.length;
 		while(sc.hasNextLine())
 			matriz[sc.nextInt()][sc.nextInt()] = sc.nextDouble();
 		sc.close();
