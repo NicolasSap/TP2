@@ -18,6 +18,8 @@ public class MatrizMath {
 	public MatrizMath(String path) throws FileNotFoundException{
 		Scanner sc = new Scanner(new File(path));
 		matriz = new double[sc.nextInt()][sc.nextInt()];
+		this.dimCol = matriz.length;
+		this.dimFil = matriz[0].length;
 		while(sc.hasNextLine())
 			matriz[sc.nextInt()][sc.nextInt()] = sc.nextDouble();
 		sc.close();
