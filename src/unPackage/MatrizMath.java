@@ -6,9 +6,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MatrizMath {
-	int dimCol;
-	int dimFil;
-	double [][] matriz;
+	private int dimCol;
+	private int dimFil;
+	private double [][] matriz;
 	public MatrizMath(double[][] matriz) {
 		this.matriz = matriz;
 		this.dimCol = matriz.length;
